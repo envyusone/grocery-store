@@ -75,7 +75,7 @@ function getItemsByCategory(items, category) {
  * @returns {number} the total quantity of all items
  */
 function countItems(items) {
-  // TODO: use `reduce`
+  return items.reduce((total, item) => total + item.quantity, 0);
 }
 
 /**
