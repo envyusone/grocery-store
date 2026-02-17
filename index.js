@@ -83,7 +83,7 @@ function countItems(items) {
  * @returns {number} the cost of all given items
  */
 function getTotalPrice(items) {
-  // TODO: use `reduce`
+  return items.reduce((total, item) => total + (item.price * item.quantity), 0);
 }
 
 // === READ BUT DO NOT CHANGE THE CODE BELOW ===
